@@ -5,20 +5,28 @@ import './App.css';
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Jo & Tom</h1>
+        <div className="date">9th May 2020</div>
       </header>
+      <main>
+        <section>
+          <h2>RSVP</h2>
+          RSVP link
+        </section>
+        <section>
+          <h2>Ceremony</h2>
+          Ceremony details.
+        </section>
+        <section>
+          <h2>Reception</h2>
+          Reception details.
+        </section>
+        <section>
+          <h2>Gift List</h2>
+          Reception details.
+        </section>
+      </main>
     </div>
   );
 }
