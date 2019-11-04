@@ -11,7 +11,7 @@ const App: React.FC = () => {
       <main>
         <section>
           <h2>RSVP</h2>
-          <form name="rsvp" data-netlify="true">
+          <form name="rsvp" action="https://formspree.io/xaywgjvn" method="POST">
             <p>
               <label>Name(s) <input type="text" name="name" /></label>
             </p>
