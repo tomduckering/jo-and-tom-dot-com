@@ -7,12 +7,12 @@
   width: 100%;
   display: grid;
   grid-template-columns: calc(calc(100% - 900px) / 2) 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr calc(calc(100% - 900px) / 2);
-  grid-template-areas: ". header header header header header header header header header header header header ."
+  grid-template-areas: "header header header header header header header header header header header header header header"
   ". content content content content content content content content content content content content .";
   grid-template-rows: auto auto;
 }
 
-@media only screen and (min-device-width: 375px)
+@media only screen and (max-device-width: 900px)
    { 
     .App {
       grid-template-columns: 20px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 20px;
@@ -21,7 +21,9 @@
 
 .App header {
   grid-area: header;
-  margin-bottom: 3em;
+  padding-bottom: 3em;
+  background-color: black;
+  color: white;
 }
 
 .App main {
