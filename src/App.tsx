@@ -6,23 +6,24 @@ const App: React.FC = () => {
     <div className="App">
       <header>
         <h1 className="title">Tom & Jo</h1>
-        <div className="date">9th May 2020</div>
+        <div className="date">Saturday 9th May 2020</div>
       </header>
       <main>
         <section className="rsvp">
           <h2>RSVP</h2>
+          <p>Please let us know that you're coming.</p>
           <form name="rsvp" action="https://formspree.io/mwkedqrq" method="POST">
             <p>
-              <label>Name(s) <input type="text" name="name" /></label>
+              <label>Name(s) <input type="text" name="name" placeholder="Your name"/></label>
             </p>
             <p>
-              <label>Email <input type="email" name="email" /></label>
+              <label>Email <input type="email" name="email" placeholder="Your email address"/></label>
             </p>
             <p>
-              <label>Notes <textarea name="notes"></textarea></label>
+              <label>Notes <textarea name="notes" placeholder="Let us know of any dietary requirements or needs we can cater for"></textarea></label>
             </p>
             <p>
-              <button type="submit">Send</button>
+              <button type="submit">Confirm</button>
             </p>
           </form>
         </section>
@@ -59,7 +60,7 @@ const App: React.FC = () => {
           <p>If you have any questions not answered here please get in touch.</p>
           <form name="contact" action="https://formspree.io/mnqakzgo" method="POST">
             <p>
-              <label>You Name <input type="text" name="name" /></label>
+              <label>Name <input type="text" name="name" /></label>
             </p>
             <p>
               <label>Email <input type="email" name="email" /></label>

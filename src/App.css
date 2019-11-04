@@ -1,22 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-size: 18pt;
+  width: 900px;
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 100px;
+  grid-template-areas: ". header header header header header header header header header header header header ."
+  ". content content content content content content content content content content content content .";
+  grid-template-rows: 100px auto;
 }
 
-.App-logo {
-  height: 40vmin;
+.App header {
+  grid-area: header;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App main {
+  grid-area: content;
 }
 
-.App-link {
-  color: #09d3ac;
+.App header h1.title {
+  font-size: 3em;
+}
+
+.App main section input,.App main section button {
+  font-family : inherit;
+  font-size   : 100%;
+}
+
+.App main section textarea {
+  font-family : inherit;
+  font-size   : 100%;
+  width: 500px;
+  height: 100px;
 }
