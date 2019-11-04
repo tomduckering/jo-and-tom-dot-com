@@ -12,6 +12,13 @@
   grid-template-rows: auto auto;
 }
 
+@media only screen and (min-device-width: 375px)
+   { 
+    .App {
+      grid-template-columns: 20px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 20px;
+    }
+}
+
 .App header {
   grid-area: header;
   margin-bottom: 3em;
@@ -64,4 +71,15 @@ time {
   font-size   : 100%;
   width: 500px;
   height: 100px;
+}
+
+@media only screen and (min-device-width: 375px)
+   { 
+    .App main section textarea {
+      width: calc(100% - 20px);
+    }
+
+    .App main section input {
+      width: calc(100% - 20px);
+    }
 }
