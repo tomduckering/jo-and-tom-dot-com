@@ -4,16 +4,17 @@
   text-align: center;
   font-family: 'EB Garamond', serif;
   font-size: 18pt;
-  width: 900px;
+  width: 100%;
   display: grid;
-  grid-template-columns: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 100px;
+  grid-template-columns: calc(calc(100% - 900px) / 2) 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr calc(calc(100% - 900px) / 2);
   grid-template-areas: ". header header header header header header header header header header header header ."
   ". content content content content content content content content content content content content .";
-  grid-template-rows: 100px auto;
+  grid-template-rows: auto auto;
 }
 
 .App header {
   grid-area: header;
+  margin-bottom: 3em;
 }
 
 .App main {
@@ -27,6 +28,35 @@
 .App main section input,.App main section button {
   font-family : inherit;
   font-size   : 100%;
+}
+
+section h2 {
+  margin-top: 3em;
+  padding-bottom: 0.6em;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+}
+
+time {
+  display: block;
+  margin-bottom: 1em;
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.ceremony a, .reception a {
+  display: block;
+  margin-top: 1em;
+}
+
+.address p {
+  margin-bottom: 0.2em;
+  margin-top: 0;
+}
+
+.App main section input {
+  width: 500px;
 }
 
 .App main section textarea {
