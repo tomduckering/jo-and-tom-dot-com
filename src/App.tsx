@@ -10,11 +10,11 @@ const App: React.FC = () => {
       </header>
       <main>
         <section className="rsvp">
-          <h2>RSVP</h2>
+          <h2>R.S.V.P.</h2>
           <em>Please let us know that you're coming.</em>
           <form name="rsvp" action="https://formspree.io/mwkedqrq" method="POST">
             <p>
-              <input type="text" name="name" placeholder="Your name" />
+              <input type="text" name="name" placeholder="Your name(s)" />
             </p>
             <p>
               <input type="email" name="email" placeholder="Your email address" />
@@ -29,7 +29,7 @@ const App: React.FC = () => {
         </section>
         <section className="ceremony">
           <h2>Ceremony</h2>
-          <time>for 3·00pm</time>
+          <p>for <time>2·00pm</time> at</p>
           <div className="address">
             <p>Christ Church Mayfair</p>
             <p>Down Street</p>
@@ -41,7 +41,7 @@ const App: React.FC = () => {
         <section className="reception">
           <h2>Reception</h2>
           <p><em>by invitation only</em></p>
-          <time>until 11·30pm</time>
+          <p>until <time>midnight</time> at</p>
           <div className="address">
             <p>The Pump House Gallery</p>
             <p>Battersea Park</p>
@@ -57,18 +57,19 @@ const App: React.FC = () => {
         </section>
         <section className="directionsToReception">
           <h2>Getting to the Reception</h2>
-          <p>If you are using public transport we recommend taking the bus. Take the 137 from <a href="https://tfl.gov.uk/bus/stop/490009277S/london-hilton-hotel?lineId=137">stop A</a> outside the London Hilton Hotel on Park Lane. You can take it all the way to Battersea Park's Chelsea Gate - <a href="https://tfl.gov.uk/bus/stop/490005064S/battersea-park-chelsea-gate?lineId=137">stop CC</a>. Find more details for this journey on the <a href="https://tfl.gov.uk/plan-a-journey/results?InputFrom=London+Hilton+Hotel&From=London+Hilton+Hotel&FromId=1009277&InputTo=Battersea+Park+%2F+Chelsea+Gate&ToId=1005064">TFL website</a>.</p>
-          <p>If you are driving you can park inside Battersea Park at the car park on Carriage Drive North. More information is available at <a href="https://www.wandsworth.gov.uk/parking/parking-zones/battersea-park-area-parking-zones/">Wandworth Borough Council's website</a></p>
+          <p><em>Again, we recommend using public transport to get to the reception.</em></p>
+          <p>You can take the 137 bus from stop <a href="https://tfl.gov.uk/bus/stop/490009277S/london-hilton-hotel?lineId=137">A</a> outside the London Hilton Hotel on Park Lane all the way to Battersea Park's Chelsea Gate—alighting at stop <a href="https://tfl.gov.uk/bus/stop/490005064S/battersea-park-chelsea-gate?lineId=137">CC</a>. Find more details for this journey on the <a href="https://tfl.gov.uk/plan-a-journey/results?InputFrom=London+Hilton+Hotel&From=London+Hilton+Hotel&FromId=1009277&InputTo=Battersea+Park+%2F+Chelsea+Gate&ToId=1005064">TFL website</a>.</p>
+          <p>If you are driving you can park inside Battersea Park at the car park on Carriage Drive North. More information is available at <a href="https://www.wandsworth.gov.uk/parking/parking-zones/battersea-park-area-parking-zones/">Wandsworth Borough Council's website</a></p>
         </section>
         <section className="gifts">
           <h2>Gift List</h2>
-          <p>Don't feel obliged to give us a gift. If you wish to, John Lewis is holding our gift list.</p>
+          <p>Don't feel obliged to give us a gift. If you wish to, John Lewis are holding our gift list.</p>
           <p>List Number: 776905</p>
           <a href="https://www.johnlewisgiftlist.com/giftint/JSPs/GiftList/BuyGifts/GuestFindAList.jsp">John Lewis Gift List</a>
         </section>
         <section className="contact">
           <h2>Contact Us</h2>
-          <p><em>If you have any questions not answered here please get in touch.</em></p>
+          <p><em>If you have any questions that are not answered here please get in touch.</em></p>
           <form name="contact" action="https://formspree.io/mnqakzgo" method="POST">
             <p>
               <input type="text" name="name" placeholder="Your name"/>
