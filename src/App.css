@@ -10,6 +10,7 @@
   grid-template-areas: "header header header header header header header header header header header header header header"
   ". content content content content content content content content content content content content .";
   grid-template-rows: auto auto;
+  font-variant-numeric: oldstyle-nums;
 }
 
 @media only screen and (max-device-width: 900px)

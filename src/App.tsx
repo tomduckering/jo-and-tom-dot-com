@@ -47,38 +47,37 @@ const App: React.FC = () => {
             <p>Battersea Park</p>
             <p>London</p>
           </div>
-          <a href="https://pumphousegallery.org.uk/visit/how-to-find-us">pumphousegallery.org.uk/visit/how-to-find-us</a>
+          <a href="https://pumphousegallery.org.uk/visit/how-to-find-us">pumphousegallery.org.uk</a>
         </section>
         <section className="directionsToChurch">
           <h2>Getting to the Church</h2>
-          <p>We recommend using public transport to get to the church.</p>
-          <p>The nearest underground stations are Green Park and Hyde Park Corner - both are less than 10 minutes walk away.</p>
-          <p>Parking near the church is very limited. You may find parking on the street but many places are restricted for residents only.</p>
-          <p>There is a paid NCP car park on Carrington Street for £10 per hour.</p>
+          <p><em>We recommend using public transport to get to the church.</em></p>
+          <p>The nearest underground stations are Green Park and Hyde Park Corner—both are less than 10 minutes walk to the church.</p>
+          <p>Parking near the church is very limited. You may find parking on the street but many places are restricted for residents only. Alternatively there is a paid NCP car park on Carrington Street for £10 per hour.</p>
         </section>
         <section className="directionsToReception">
           <h2>Getting to the Reception</h2>
-          <p>If you are using public transport we recommend taking the bus. Take the 137 from stop A outside the London Hilton Hotel on Park Lane. You can take it all the way to the Battersea Park's Chelsea Gate - stop CC.</p>
-          <p>If you are driving you can park inside Battersea Park at the car park on Carriage Drive North. More information is available at <a href="https://www.wandsworth.gov.uk/parking/parking-zones/battersea-park-area-parking-zones/">Wandworth Borough Council's Website</a></p>
+          <p>If you are using public transport we recommend taking the bus. Take the 137 from <a href="https://tfl.gov.uk/bus/stop/490009277S/london-hilton-hotel?lineId=137">stop A</a> outside the London Hilton Hotel on Park Lane. You can take it all the way to Battersea Park's Chelsea Gate - <a href="https://tfl.gov.uk/bus/stop/490005064S/battersea-park-chelsea-gate?lineId=137">stop CC</a>. Find more details for this journey on the <a href="https://tfl.gov.uk/plan-a-journey/results?InputFrom=London+Hilton+Hotel&From=London+Hilton+Hotel&FromId=1009277&InputTo=Battersea+Park+%2F+Chelsea+Gate&ToId=1005064">TFL website</a>.</p>
+          <p>If you are driving you can park inside Battersea Park at the car park on Carriage Drive North. More information is available at <a href="https://www.wandsworth.gov.uk/parking/parking-zones/battersea-park-area-parking-zones/">Wandworth Borough Council's website</a></p>
         </section>
         <section className="gifts">
           <h2>Gift List</h2>
-          <div>Don't feel obliged to give us a gift. If you wish to however John Lewis is holding our gift list.</div>
-          <div>Number: 776905</div>
+          <p>Don't feel obliged to give us a gift. If you wish to, John Lewis is holding our gift list.</p>
+          <p>List Number: 776905</p>
           <a href="https://www.johnlewisgiftlist.com/giftint/JSPs/GiftList/BuyGifts/GuestFindAList.jsp">John Lewis Gift List</a>
         </section>
         <section className="contact">
           <h2>Contact Us</h2>
-          <p>If you have any questions not answered here please get in touch.</p>
+          <p><em>If you have any questions not answered here please get in touch.</em></p>
           <form name="contact" action="https://formspree.io/mnqakzgo" method="POST">
             <p>
-              <label>Name <input type="text" name="name" placeholder="Your name"/></label>
+              <input type="text" name="name" placeholder="Your name"/>
             </p>
             <p>
-              <label>Email <input type="email" name="email" placeholder="Your email address"/></label>
+              <input type="email" name="email" placeholder="Your email address"/>
             </p>
             <p>
-              <label>Your Question <textarea name="notes" placeholder="Ask your question here"></textarea></label>
+              <textarea name="notes" placeholder="Ask your question here"></textarea>
             </p>
             <p>
               <button type="submit">Send</button>
