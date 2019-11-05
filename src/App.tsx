@@ -6,21 +6,21 @@ const App: React.FC = () => {
     <div className="App">
       <header>
         <h1 className="title">Tom & Jo</h1>
-        <div className="date">Saturday 9th May 2020</div>
+        <em className="date">Saturday 9th May 2020</em>
       </header>
       <main>
         <section className="rsvp">
           <h2>RSVP</h2>
-          <p>Please let us know that you're coming.</p>
+          <em>Please let us know that you're coming.</em>
           <form name="rsvp" action="https://formspree.io/mwkedqrq" method="POST">
             <p>
-              <label>Name(s) <input type="text" name="name" placeholder="Your name" /></label>
+              <input type="text" name="name" placeholder="Your name" />
             </p>
             <p>
-              <label>Email <input type="email" name="email" placeholder="Your email address" /></label>
+              <input type="email" name="email" placeholder="Your email address" />
             </p>
             <p>
-              <label>Notes <textarea name="notes" placeholder="Let us know of any dietary requirements or needs you have that we can cater for"></textarea></label>
+              <textarea name="notes" placeholder="Let us know of any dietary requirements or needs you have that we can cater for"></textarea>
             </p>
             <p>
               <button type="submit">Confirm</button>
@@ -29,7 +29,7 @@ const App: React.FC = () => {
         </section>
         <section className="ceremony">
           <h2>Ceremony</h2>
-          <time>3·00pm</time>
+          <time>for 3·00pm</time>
           <div className="address">
             <p>Christ Church Mayfair</p>
             <p>Down Street</p>
@@ -40,7 +40,7 @@ const App: React.FC = () => {
         </section>
         <section className="reception">
           <h2>Reception</h2>
-          <p>by invitation only</p>
+          <p><em>by invitation only</em></p>
           <time>until 11·30pm</time>
           <div className="address">
             <p>The Pump House Gallery</p>

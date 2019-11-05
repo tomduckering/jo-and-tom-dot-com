@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700i,800,800i&display=swap');
 
 .App {
   text-align: center;
@@ -32,6 +32,7 @@
 
 .App header h1.title {
   font-size: 3em;
+  font-weight: 500;
 }
 
 .App main section input,.App main section button {
@@ -39,8 +40,14 @@
   font-size   : 100%;
 }
 
+.App main section button {
+  padding: 20px;
+  font-weight: 600;
+}
+
 section h2 {
   margin-top: 3em;
+  font-weight: 500;
   padding-bottom: 0.6em;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -66,6 +73,7 @@ time {
 
 .App main section input {
   width: 500px;
+  padding: 20px;
 }
 
 .App main section textarea {
@@ -73,6 +81,7 @@ time {
   font-size   : 100%;
   width: 500px;
   height: 100px;
+  padding: 20px;
 }
 
 @media only screen and (min-device-width: 375px)
