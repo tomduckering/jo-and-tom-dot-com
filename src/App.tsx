@@ -6,7 +6,7 @@ const App: React.FC = () => {
     <div className="App">
       <header>
         <h1 className="title">Tom & Jo</h1>
-        <em className="date">Saturday 9th May 2020</em>
+        <p className="date">Saturday 9th May 2020</p>
       </header>
       <main>
         <section className="rsvp">
