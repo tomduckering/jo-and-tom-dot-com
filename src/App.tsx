@@ -6,8 +6,8 @@ const App: React.FC = () => {
     <div className="App">
       <header>
         <h1 className="title">Tom & Jo</h1>
-        <p>❦</p>
         <p className="date">Saturday 9th May 2020</p>
+        <p className="fleuron">❦</p>
       </header>
       <main>
         <section className="rsvp">
@@ -87,6 +87,9 @@ const App: React.FC = () => {
           </form>
         </section>
       </main>
+      <footer>
+        <p className="fleuron">❦</p>
+      </footer>
     </div>
   );
 }
