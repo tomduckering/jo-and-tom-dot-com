@@ -6,6 +6,7 @@ const App: React.FC = () => {
     <div className="App">
       <header>
         <h1 className="title">Tom & Jo</h1>
+        <p>❦</p>
         <p className="date">Saturday 9th May 2020</p>
       </header>
       <main>
@@ -23,7 +24,7 @@ const App: React.FC = () => {
               <textarea name="notes" placeholder="Let us know of any dietary requirements or needs you have that we can cater for"></textarea>
             </p>
             <p>
-              <button type="submit">Confirm</button>
+              <button type="submit">☞ Confirm</button>
             </p>
           </form>
         </section>
@@ -81,7 +82,7 @@ const App: React.FC = () => {
               <textarea name="notes" placeholder="Ask your question here"></textarea>
             </p>
             <p>
-              <button type="submit">Send</button>
+              <button type="submit">☞ Send</button>
             </p>
           </form>
         </section>
