@@ -23,8 +23,6 @@
 .App header {
   grid-area: header;
   padding-bottom: 3em;
-  background-color: black;
-  color: white;
 }
 
 .App main {
