@@ -1,115 +1,162 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700i,800,800i&display=swap');
+/* @import url('https:///fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700i,800,800i&display=swap'); */
 
-.App {
-  text-align: center;
-  font-family: 'EB Garamond', serif;
-  font-size: 18pt;
-  width: 100%;
-  display: grid;
-  grid-template-columns: calc(calc(100% - 900px) / 2) 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr calc(calc(100% - 900px) / 2);
-  grid-template-areas: "header header header header header header header header header header header header header header"
-  ". content content content content content content content content content content content content .";
-  grid-template-rows: auto auto;
-  font-variant-numeric: oldstyle-nums;
+@font-face {
+    font-family: 'EBGaramond';
+    src: url(/fonts/EBGaramond08-Italic.eot );
+    src: url('/fonts/EBGaramond08-Italic.ttf') format('truetype'), url('/fonts/EBGaramond08-Italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
 }
 
-@media only screen and (max-device-width: 900px)
-   { 
+@font-face {
+    font-family: 'EBGaramond';
+    src: url(/fonts/EBGaramond08-SC.eot );
+    src: url('/fonts/EBGaramond08-SC.ttf') format('truetype'), url('/fonts/EBGaramond08-SC.woff') format('woff');
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'EBGaramond';
+    src: url(/fonts/EBGaramond12-Italic.eot );
+    src: url('/fonts/EBGaramond12-Italic.ttf') format('truetype'), url('/fonts/EBGaramond12-Italic.woff') format('woff');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EBGaramondSC';
+    src: url(/fonts/EBGaramond12-SC.eot );
+    src: url('/fonts/EBGaramond12-SC.ttf') format('truetype'), url('/fonts/EBGaramond12-SC.woff') format('woff');
+    font-variant: small-caps;
+}
+
+@font-face {
+    font-family: 'EBGaramond';
+    src: url(/fonts/EBGaramond08-Regular.eot );
+    src: url('/fonts/EBGaramond08-Regular.ttf') format('truetype'), url('/fonts/EBGaramond08-Regular.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'EBGaramond';
+    src: url(/fonts/EBGaramond12-Regular.eot );
+    src: url('/fonts/EBGaramond12-Regular.ttf') format('truetype'), url('/fonts/EBGaramond12-Regular.woff') format('woff');
+}
+
+
+
+.App {
+    text-align: center;
+    font-family: 'EBGaramond', serif;
+    -webkit-font-feature-settings: "liga", "calt", "swsh";
+    font-size: 18pt;
+    width: 100%;
+    display: grid;
+    grid-template-columns: calc(calc(100% - 900px) / 2) 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr calc(calc(100% - 900px) / 2);
+    grid-template-areas: "header header header header header header header header header header header header header header" ". content content content content content content content content content content content content .";
+    grid-template-rows: auto auto;
+    font-variant-numeric: oldstyle-nums;
+}
+
+@media only screen and (max-device-width: 900px) {
     .App {
-      grid-template-columns: 20px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 20px;
+        grid-template-columns: 20px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 20px;
     }
 }
 
 .App header {
-  grid-area: header;
-  padding-bottom: 3em;
+    grid-area: header;
+    padding-bottom: 3em;
 }
 
 .App main {
-  grid-area: content;
+    grid-area: content;
 }
 
 .App header h1.title {
-  font-size: 3em;
-  font-weight: 500;
-  font-style: italic;
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
 }
 
-.App main section input, .App main section textarea {
-  font-style: italic;
-  font-family : inherit;
-  font-size   : 100%;
+.App main section input,
+.App main section textarea {
+    font-style: italic;
+    font-family: inherit;
+    font-size: 100%;
 }
 
 .App main section button {
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  font-family : inherit;
-  font-size   : 100%;
-  padding: 20px;
-  font-weight: 600;
-  background-color: black;
-  color: white;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-  border-radius: 6px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 100%;
+    padding: 20px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 6px;
 }
 
 .App main section button:hover {
-  background-color: darkgrey;
-  border-color: darkgrey;
+    background-color: darkgrey;
+    border-color: darkgrey;
 }
 
 .App main section button:active {
-  background-color: white;
-  color: black;
-  border-color: black;
+    background-color: white;
+    color: black;
+    border-color: black;
 }
 
 section h2 {
-  margin-top: 3em;
-  font-weight: 500;
-  padding-bottom: 0.6em;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: darkgrey;
+    margin-top: 3em;
+    font-weight: 500;
+    padding-bottom: 0.6em;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: darkgrey;
 }
 
 time {
-  font-size: 1.4em;
+    /* font-size: 1.2em; */
 }
 
-.ceremony a, .reception a {
-  display: block;
-  margin-top: 1em;
+.ceremony a,
+.reception a {
+    display: block;
+    margin-top: 1em;
 }
 
 .address p {
-  margin-bottom: 0.2em;
-  margin-top: 0;
+    margin-bottom: 0.2em;
+    margin-top: 0;
 }
 
 .App main section input {
-  width: 100%;
-  padding: 20px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: darkgrey;
-  box-sizing: border-box;
-  border-radius: 6px;
+    width: 100%;
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkgrey;
+    box-sizing: border-box;
+    border-radius: 6px;
 }
 
 .App main section textarea {
-  font-family : inherit;
-  font-size   : 100%;
-  width: 100%;
-  height: 200px;
-  padding: 20px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: darkgrey;
-  box-sizing: border-box;
-  border-radius: 6px;
+    font-family: inherit;
+    font-size: 100%;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkgrey;
+    box-sizing: border-box;
+    border-radius: 6px;
 }

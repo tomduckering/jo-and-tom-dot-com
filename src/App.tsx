@@ -41,7 +41,7 @@ const App: React.FC = () => {
         <section className="reception">
           <h2>Reception</h2>
           <p><em>by invitation only</em></p>
-          <p>until <time>midnight</time> at</p>
+          <p>from 4·00pm until <time>midnight</time> at</p>
           <div className="address">
             <p>The Pump House Gallery</p>
             <p>Battersea Park</p>
