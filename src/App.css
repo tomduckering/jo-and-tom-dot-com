@@ -50,6 +50,7 @@
     font-family: 'EBGaramond', serif;
     -webkit-font-feature-settings: "liga", "calt", "swsh";
     font-size: 18pt;
+    line-height: 1.5em;
     width: 100%;
     display: grid;
     grid-template-columns: calc(calc(100% - 900px) / 2) 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr calc(calc(100% - 900px) / 2);
@@ -81,9 +82,19 @@
 
 .App header h1.title {
     margin-top: 150px;
-    font-size: 3em;
+    font-size: 6em;
     font-weight: bold;
     font-style: italic;
+}
+
+@media only screen and (min-device-width: 900px) {
+    .App header h1.title{
+        font-size: 3em;
+    }
+}
+
+.App .date {
+    font-size: 1.5em;
 }
 
 .App .fleuron {
