@@ -66,7 +66,7 @@ const App: React.FC = () => {
         </section>
         <section className="gifts">
           <h2>Gift List</h2>
-          <p>Please don't feel obliged to give us a gift—however if you wish to, John Lewis are holding our gift list.</p>
+          <p>Please don't feel obligated to give us a gift—however if you wish to, John Lewis are holding our gift list.</p>
           <p>List Number: 776905</p>
           <a href="https://www.johnlewisgiftlist.com/giftint/JSPs/GiftList/BuyGifts/GuestFindAList.jsp">John Lewis Gift List</a>
         </section>
