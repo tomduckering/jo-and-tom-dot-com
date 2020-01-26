@@ -14,6 +14,12 @@ const App: React.FC = () => {
           <h2>R.S.V.P.</h2>
           <em>Please let us know by Friday 28th February if you're coming.</em>
           <form name="rsvp" action="https://formspree.io/mwkedqrq" method="POST">
+          <p>
+            <label className="switch">
+              <input name="Coming" type="checkbox" defaultChecked={true}></input>
+              <span className="slider"></span>
+              </label>
+            </p>
             <p>
               <input type="text" name="name" placeholder="Your name(s)" />
             </p>
@@ -24,7 +30,7 @@ const App: React.FC = () => {
               <textarea name="notes" placeholder="Let us know of any dietary requirements or needs you have that we can cater for"></textarea>
             </p>
             <p>
-              <button type="submit">Confirm</button>
+              <button type="submit">Respond</button>
             </p>
           </form>
         </section>
