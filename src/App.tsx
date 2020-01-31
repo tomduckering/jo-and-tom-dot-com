@@ -12,7 +12,7 @@ const App: React.FC = () => {
       <main>
         <section className="rsvp">
           <h2>R.S.V.P.</h2>
-          <em>Please let us know by Friday 28th February if you're coming.</em>
+          <em>Please let us know by Friday 28th February whether you're coming.</em>
           <form name="rsvp" action="https://formspree.io/mwkedqrq" method="POST">
             <p>
               <input type="text" name="name" placeholder="Your name(s)" />
@@ -21,10 +21,10 @@ const App: React.FC = () => {
               <input type="email" name="email" placeholder="Your email address" />
             </p>
             <p>
-              <textarea name="notes" placeholder="Let us know of any dietary requirements or needs you have that we can cater for"></textarea>
+              <textarea name="notes" placeholder="Let us know if you're attending and of any dietary requirements or needs you have that we can cater for"></textarea>
             </p>
             <p>
-              <button type="submit">Confirm</button>
+              <button type="submit">Respond</button>
             </p>
           </form>
         </section>
