@@ -40,7 +40,7 @@ const App: React.FC = () => {
             </em>
           </p>
           <p>
-            Join us at <time>11.00am</time> on Saturday July 18th via a YouTube
+            Join us at <time>11.00am BST/8.00pm AEST</time> on Saturday July 18th via a YouTube
             live stream.
           </p>
           <p>
@@ -51,11 +51,11 @@ const App: React.FC = () => {
           <h2>Gift List</h2>
           <p>
             Please don't feel obligated to give us a gift—however if you wish to
-            our Maid of Honour is maintaining a gift list.
+            our bridesmaid Katie is maintaining a gift list.
           </p>
           <p>
             You can contact her via email:{" "}
-            <a href="https://www.johnlewisgiftlist.com/giftint/JSPs/GiftList/BuyGifts/GuestFindAList.jsp">
+            <a href="mailto:kvivyan@hotmail.com">
               Katie Vivyan
             </a>
           </p>
