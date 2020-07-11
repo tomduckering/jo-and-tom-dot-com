@@ -12,6 +12,36 @@ const App: React.FC = () => {
         <p className="fleuron">❦</p>
       </header>
       <main>
+        <section className="livestream">
+          <h2>Join Us Online</h2>
+          <p>
+            <em>For those who want to join, here are the details:</em>
+          </p>
+          <p className={"date"}>
+            <time>11.00am BST</time> / <time>8.00pm AEST</time>
+          </p>
+          <p className={"date"}>Saturday July 18th</p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Hxp9j1kblvM"
+            frameBorder={0}
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+          <p className={"streamLinks"}>
+            <a
+              className="button"
+              href="https://www.youtube.com/watch?v=Hxp9j1kblvM"
+            >
+              YouTube Livestream
+            </a>
+          </p>
+          <p>
+            If you are using another device, like a Smart TV, you can search in YouTube for "
+            <em>Tom Jo Marriage Ceremony</em>".
+          </p>
+        </section>
         <section className="changeOfPlan">
           <h2>A Change of Plan</h2>
           <p>
@@ -31,22 +61,6 @@ const App: React.FC = () => {
             <em>To that end please mark Friday May 7th 2021 in your diary.</em>
           </p>
         </section>
-        <section className="livestream">
-          <h2>Join Us Online</h2>
-          <p>
-            <em>
-              For those who want to join, we are working to provide a live
-              stream.
-            </em>
-          </p>
-          <p>
-            Join us at <time>11.00am BST/8.00pm AEST</time> on Saturday July 18th via a YouTube
-            live stream.
-          </p>
-          <p>
-            <em>We will post a link here shortly before the ceremony.</em>
-          </p>
-        </section>
         <section className="gifts">
           <h2>Gift List</h2>
           <p>
@@ -55,9 +69,7 @@ const App: React.FC = () => {
           </p>
           <p>
             You can contact her via email:{" "}
-            <a href="mailto:kvivyan@hotmail.com">
-              Katie Vivyan
-            </a>
+            <a href="mailto:kvivyan@hotmail.com">Katie Vivyan</a>
           </p>
         </section>
         <section className="contact">

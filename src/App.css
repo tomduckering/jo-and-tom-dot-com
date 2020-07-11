@@ -103,6 +103,11 @@
     margin-bottom: 50px;
 }
 
+.App main section .streamLinks {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
 .App main section input,
 .App main section textarea {
     font-style: italic;
@@ -110,7 +115,7 @@
     font-size: 100%;
 }
 
-.App main section button {
+.App main section button, .App main section .button {
     -webkit-transition-duration: 0.4s;
     /* Safari */
     transition-duration: 0.4s;
