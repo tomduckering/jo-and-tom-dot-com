@@ -22,6 +22,7 @@ const App: React.FC = () => {
           </p>
           <p className={"date"}>Saturday July 18th</p>
           <iframe
+            title="embedded-youtube-livestream"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/Hxp9j1kblvM"
